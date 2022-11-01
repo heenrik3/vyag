@@ -1,0 +1,64 @@
+.footer
+    padding: 5rem 15rem
+    color: $primary-color
+    background-color: $secondary-color
+    
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    gap: 5rem
+
+    @include respond(tab-port)
+        padding: 4rem 10rem
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto
+
+    @include respond(phone)
+        padding: 2rem
+        grid-template-columns: 1fr
+        // grid-template-rows: auto
+
+    &__column
+        font-size: 1.4rem
+
+        display: grid
+        grid-template-rows: auto
+        gap: 2rem
+
+    .logo
+        font-size: 2rem
+        font-weight: bold
+
+    &__title
+        font-size: 1.6rem
+        font-weight: bold
+
+    &__input
+        
+        // padding: 0 1rem
+        border-radius: 5px
+        // overflow: hidden
+        color: $secondary-color
+        background-color: $primary-color
+        
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        & input
+            border: none
+            padding: 0rem 2rem
+            background-color: $primary-color
+        
+        & button
+            color: $primary-color
+            height: 5rem
+            width: 5rem
+            border: none
+            background-color: $tertiary-color
+
+    &__socials
+        font-size: 2.5rem
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 1rem
+        place-items: center

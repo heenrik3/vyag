@@ -1,0 +1,31 @@
+@keyframes pageswitch
+  from
+    opacity: 0
+  to
+    opacity: 1
+ 
+
+.page
+  min-height: 100vh
+
+  display: flex
+  flex-direction: column
+  align-items: center
+  
+  animation: pageswitch .4s
+
+.sobre, .planos, .contato, .login
+  text-transform: uppercase
+  justify-content: center
+  
+  & h1
+    font-size: 20rem
+
+    @include respond(tab-land)
+      font-size: 15rem
+
+    @include respond(tab-port)
+      font-size: 10rem
+
+    @include respond(phone)
+      font-size: 5rem

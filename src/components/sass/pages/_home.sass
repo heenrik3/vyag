@@ -1,0 +1,112 @@
+.home
+    &__section
+        min-height: 100vh
+        width: 100%
+        padding: 10rem
+
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        @include respond(tab-port)
+            padding: 5rem
+
+        @include respond(phone)
+            padding: 5rem 2rem
+
+    &__landing
+        justify-content: center
+        gap: 2rem
+
+        text-align: center
+    
+    &__title
+        &--primary
+            width: 80%
+            font-size: 12rem
+            text-transform: uppercase
+            font-weight: 800
+
+            @include respond(tab-port)
+                width: auto
+                font-size: 6rem
+
+            @include respond(phone)
+                font-size: 4rem
+        
+        &--secondary
+            font-size: 4rem
+
+            @include respond(tab-port)
+                font-size: 3rem
+
+            @include respond(phone)
+                font-size: 2rem
+
+    &__buttons
+        width: auto
+        display: grid
+        grid-template-columns: auto 1fr
+        gap: 1rem
+
+        & button
+            font-size: inherit
+            text-transform: uppercase
+
+
+    &__cards
+        background-color: $primary-color
+
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        color: $secondary-color
+
+        h2
+            text-align: center
+            // width: 75%
+
+        .cards
+            margin-top: 5rem
+            display: grid
+            grid-template-rows: 1fr auto
+            gap: 3rem
+            place-items: center
+            
+            & > *
+                width: 60%
+                gap: 3rem
+
+                @include respond(tab-land)
+                    width: 80%
+
+                @include respond(tab-port)
+                    width: 100%
+            &--1
+                
+                display: grid
+                grid-template-columns: 1fr 1fr
+
+                @include respond(tab-port)
+                    grid-template-rows: auto
+                    grid-template-columns: auto
+
+                @include respond(phone)
+                    grid-template-rows: auto
+                    grid-template-columns: auto
+                
+            &--2
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                
+                @include respond(tab-port)
+                    grid-template-rows: auto
+                    grid-template-columns: auto
+
+                @include respond(phone)
+                    grid-template-rows: auto
+                    grid-template-columns: auto
+
+.lazy-img
+    filter: blur(20px)
