@@ -13,7 +13,7 @@ function App() {
     <>
       <div className="App">
         <video
-          src="/images/bg1.mp4"
+          src="/images/bg.mp4"
           autoPlay={true}
           loop={true}
           muted={true}

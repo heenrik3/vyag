@@ -31,14 +31,12 @@ function Home() {
           <div className="cards--1">
             <Card
               label="Aventura"
-              // src="images/img-1-lazy.jpg"
               src="images/img-1.jpg"
               description="Explore cachoeiras nas profudezas da Amazônia"
             />
 
             <Card
               label="Aventura"
-              // src="images/img-2-lazy.jpg"
               src="images/img-2.jpg"
               description="Viaje por dunas no deserto do Saara"
             />
@@ -46,19 +44,16 @@ function Home() {
           <div className="cards--2">
             <Card
               label="Mistério"
-              // src="images/img-3-lazy.jpg"
               src="images/img-3.jpg"
               description="Visite ilhas Atlânticas desconhecidas"
             />
             <Card
               label="Adrenalina"
-              // src="images/img-4-lazy.jpg"
               src="images/img-4.jpg"
               description="Sinta o ponto mais alto do Everest"
             />
             <Card
               label="Adrenalina"
-              // src="images/img-5-lazy.jpg"
               src="images/img-5.jpg"
               description="Desbrave o oceano por águas inexploradas"
             />

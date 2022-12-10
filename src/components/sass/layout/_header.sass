@@ -1,7 +1,7 @@
 .header
   height: 8rem
   width: 100%
-  padding: 2rem
+  padding: 2rem 15rem
   background-color: $tertiary-color
   box-shadow: 0 6px 20px rgb(56 125 255 / 17%)
   position: fixed
@@ -10,6 +10,12 @@
 
   align-items: center
   justify-content: space-between
+
+  @include respond(tab-port)
+    padding: 1rem 10rem
+  
+  @include respond(phone)
+    padding: 1rem 2rem
 
 .logo
   // font-size: 1.5rem
